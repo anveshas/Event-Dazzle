@@ -58,8 +58,7 @@ This project is made using Next.js and TypeScript, with Clerk for user authoriza
 ## How to Run
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/yourusername/event-dazzle.git
-
+   git clone https://github.com/anveshas/Event-Dazzle.git
 2. **Navigate to the project directory**:
    ```sh
    cd event-dazzle
