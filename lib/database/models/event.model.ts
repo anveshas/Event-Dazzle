@@ -1,4 +1,3 @@
-
 import { Document, Schema, model, models } from "mongoose";
 
 export interface IEvent extends Document {
@@ -12,15 +11,15 @@ export interface IEvent extends Document {
   endDateTime: Date;
   price: string;
   isFree: boolean;
-  url?: string;
-  category: { _id: string, name: string }    
-  coordinates: { lat: number; lng: number }; 
+  url?: string; 
+  category: { _id: string, name: string }
   organizer: { _id: string, firstName: string, lastName: string }
 }
 
 const EventSchema = new Schema({
   title: { type: String, required: true },
   description: { type: String },
+  location: { type: String },
   createdAt: { type: Date, default: Date.now },
   imageUrl: { type: String, required: true },
   startDateTime: { type: Date, default: Date.now },
